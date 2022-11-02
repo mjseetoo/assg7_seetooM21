@@ -138,13 +138,13 @@ public class Calculator {
 	            	stack.push(y-x);
 	            }
 	            else if(postfix.charAt(i) == '/') {
-	            	 stack.push(x/y);
+	            	 stack.push(y/x);
 	            }
 	            else if(postfix.charAt(i) == '*') {
 	            	stack.push(x*y);
 	            }
 	            else if(postfix.charAt(i) == '^') {
-	            	stack.push((int) Math.pow(x, y));
+	            	stack.push((int) Math.pow(y, x));
 	            }
 
               }
